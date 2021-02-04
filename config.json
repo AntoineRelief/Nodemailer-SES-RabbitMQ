@@ -1,0 +1,8 @@
+{
+  "queue": "safe_1.6008387ac67fc800441130df.6008387bc67fc800441130e1",
+  "exchange": "safe",
+  "server": {
+    "port": 12345,
+    "host": "127.0.0.1"
+  }
+}

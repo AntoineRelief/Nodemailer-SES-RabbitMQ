@@ -1,11 +1,31 @@
 {
-  "name": "mail-sender",
+  "name": "nodemailer-amqp-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An example of using Nodemailer with RabbitMQ",
+  "main": "client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt",
+    "server": "node server.js",
+    "publish": "node publisher.js",
+    "subscribe": "node subscriber.js"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "nodemailer"
+  ],
+  "author": "Antoine Hurard",
+  "license": "",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "aws-sdk": "^2.833.0",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^3.0.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "smtp-server": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-nodemailer": "^1.0.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-eslint": "^19.0.0"
+  }
 }
